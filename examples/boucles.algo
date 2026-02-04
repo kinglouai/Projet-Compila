@@ -1,0 +1,28 @@
+ALGORITHME Boucles
+// Démontre les différentes boucles
+VAR i : ENTIER
+VAR compteur : ENTIER
+VAR somme : ENTIER
+
+DEBUT
+    // Boucle POUR - affiche les nombres de 1 à 5
+    ECRIRE("Boucle POUR de 1 a 5:")
+    POUR i DE 1 A 5 FAIRE
+        ECRIRE("  i =", i)
+    FIN_POUR
+    
+    // Boucle TANT_QUE - compte jusqu'à 3
+    ECRIRE("Boucle TANT_QUE:")
+    compteur ← 1
+    TANT_QUE compteur <= 3 FAIRE
+        ECRIRE("  compteur =", compteur)
+        compteur ← compteur + 1
+    FIN_TANT_QUE
+    
+    // Calcul de somme avec boucle POUR
+    somme ← 0
+    POUR i DE 1 A 10 FAIRE
+        somme ← somme + i
+    FIN_POUR
+    ECRIRE("Somme de 1 a 10 =", somme)
+FIN

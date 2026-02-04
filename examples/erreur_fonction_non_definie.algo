@@ -1,0 +1,8 @@
+ALGORITHME ErreurFonctionNonDefinie
+// Test: Appel d'une fonction non définie
+VAR x : ENTIER
+
+DEBUT
+    // Erreur: la fonction calculer n'existe pas
+    x ← calculer(5)
+FIN

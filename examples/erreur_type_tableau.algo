@@ -1,0 +1,8 @@
+ALGORITHME ErreurTypeTableau
+// Test: Affectation de type incompatible à un élément de tableau
+VAR tab : TABLEAU[5] DE ENTIER
+
+DEBUT
+    // Erreur: le tableau contient des ENTIER mais reçoit CHAINE
+    tab[0] ← "texte"
+FIN

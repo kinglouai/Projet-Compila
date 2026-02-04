@@ -1,0 +1,12 @@
+ALGORITHME ErreurSyntaxe
+// Ce fichier contient une erreur de syntaxe (FIN_SI manquant)
+VAR x : ENTIER
+
+DEBUT
+    x ← 10
+    SI x > 5 ALORS
+        ECRIRE("Grand")
+    SINON
+        ECRIRE("Petit")
+    // FIN_SI manquant ici!
+FIN

@@ -1,0 +1,12 @@
+ALGORITHME ErreurNombreArguments
+// Test: Mauvais nombre d'arguments à une fonction
+VAR x : ENTIER
+
+FONCTION carre(n : ENTIER) : ENTIER
+    RETOURNER n * n
+FIN_FONCTION
+
+DEBUT
+    // Erreur: carre attend 1 argument, pas 2
+    x ← carre(5, 10)
+FIN

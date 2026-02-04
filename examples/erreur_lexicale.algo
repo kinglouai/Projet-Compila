@@ -1,0 +1,8 @@
+ALGORITHME ErreurLexicale
+// Ce fichier contient une erreur lexicale (caractère invalide @)
+VAR x : ENTIER
+
+DEBUT
+    x ← 10
+    @ ← 20
+FIN

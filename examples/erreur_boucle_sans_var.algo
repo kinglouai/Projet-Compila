@@ -1,0 +1,11 @@
+ALGORITHME ErreurBoucleSansVariable
+// Ce fichier contient une erreur sémantique (variable de boucle non déclarée)
+VAR somme : ENTIER
+
+DEBUT
+    somme ← 0
+    POUR i DE 1 A 10 FAIRE
+        somme ← somme + i
+    FIN_POUR
+    ECRIRE(somme)
+FIN

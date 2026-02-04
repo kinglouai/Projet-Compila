@@ -1,0 +1,97 @@
+ALGORITHME TestFonctions2
+// Test complet des fonctions
+
+VAR a : ENTIER
+VAR b : ENTIER
+VAR c : ENTIER
+VAR r1 : ENTIER
+VAR r2 : ENTIER
+VAR r3 : REEL
+VAR msg : CHAINE
+VAR flag : BOOLEEN
+
+// Fonction simple sans paramètre
+FONCTION zero() : ENTIER
+    RETOURNER 0
+FIN_FONCTION
+
+// Fonction avec un paramètre
+FONCTION double(n : ENTIER) : ENTIER
+    RETOURNER n * 2
+FIN_FONCTION
+
+// Fonction avec deux paramètres
+FONCTION addition(x : ENTIER, y : ENTIER) : ENTIER
+    RETOURNER x + y
+FIN_FONCTION
+
+// Fonction avec calcul complexe
+FONCTION moyenne(val1 : ENTIER, val2 : ENTIER) : REEL
+    RETOURNER (val1 + val2) / 2.0
+FIN_FONCTION
+
+// Fonction qui retourne un booléen
+FONCTION estPositif(n : ENTIER) : BOOLEEN
+    SI n > 0 ALORS
+        RETOURNER VRAI
+    SINON
+        RETOURNER FAUX
+    FIN_SI
+FIN_FONCTION
+
+// Fonction factorielle (version itérative)
+FONCTION factorielle(n : ENTIER) : ENTIER
+    VAR i : ENTIER
+    VAR result : ENTIER
+    result ← 1
+    POUR i DE 1 A n FAIRE
+        result ← result * i
+    FIN_POUR
+    RETOURNER result
+FIN_FONCTION
+
+DEBUT
+    // Test fonction sans paramètre
+    r1 ← zero()
+    ECRIRE("zero() =", r1)
+    
+    // Test fonction avec un paramètre
+    a ← 5
+    r1 ← double(a)
+    ECRIRE("double(5) =", r1)
+    
+    // Test fonction avec deux paramètres
+    a ← 10
+    b ← 7
+    r1 ← addition(a, b)
+    ECRIRE("addition(10, 7) =", r1)
+    
+    // Test avec valeurs littérales
+    r2 ← addition(3, 4)
+    ECRIRE("addition(3, 4) =", r2)
+    
+    // Test fonction retournant un réel
+    r3 ← moyenne(10, 20)
+    ECRIRE("moyenne(10, 20) =", r3)
+    
+    // Test fonction booléenne
+    flag ← estPositif(5)
+    ECRIRE("estPositif(5) =", flag)
+    
+    flag ← estPositif(-3)
+    ECRIRE("estPositif(-3) =", flag)
+    
+    // Test fonction factorielle
+    r1 ← factorielle(5)
+    ECRIRE("factorielle(5) =", r1)
+    
+    // Test appels imbriqués
+    r1 ← double(addition(2, 3))
+    ECRIRE("double(addition(2, 3)) =", r1)
+    
+    // Test utilisation dans expression
+    c ← addition(a, b) + double(2)
+    ECRIRE("addition(10, 7) + double(2) =", c)
+    
+    ECRIRE("=== Tous les tests de fonctions terminés ===")
+FIN

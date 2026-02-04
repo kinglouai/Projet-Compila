@@ -1,0 +1,22 @@
+ALGORITHME TestVoidFunction
+// Test d'une fonction void (procédure) sans type de retour
+
+VAR x : ENTIER
+VAR resulat:ENTIER
+
+FONCTION afficher(n: ENTIER)
+    ECRIRE("La valeur est:", n)
+FIN_FONCTION
+
+FONCTION incrementer(n: ENTIER)
+    ECRIRE("Avant:", n)
+    n <- n + 1
+    ECRIRE("Après:", n)
+FIN_FONCTION
+
+DEBUT
+    x <- 10
+    afficher(x)
+    incrementer(x)
+    ECRIRE("Fin du test")
+FIN

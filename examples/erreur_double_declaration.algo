@@ -1,0 +1,11 @@
+ALGORITHME ErreurDoubleDeclaration
+// Ce fichier contient une erreur sémantique (double déclaration)
+VAR x : ENTIER
+VAR y : REEL
+VAR x : CHAINE
+
+DEBUT
+    x ← 10
+    y ← 3.14
+    ECRIRE(x, y)
+FIN

@@ -1,0 +1,26 @@
+ALGORITHME TestTablau
+// Exemple d'utilisation des tableaux
+VAR tab : TABLEAU[5] DE ENTIER
+VAR i : ENTIER
+VAR somme : ENTIER
+
+DEBUT
+    // Initialiser le tableau avec les valeurs 1, 2, 3, 4, 5
+    POUR i DE 0 A 4 FAIRE
+        tab[i] ← i + 1
+    FIN_POUR
+    
+    // Calculer la somme des éléments
+    somme ← 0
+    POUR i DE 0 A 4 FAIRE
+        somme ← somme + tab[i]
+    FIN_POUR
+    
+    ECRIRE("Somme des elements:", somme)
+    
+    // Afficher tous les éléments
+    ECRIRE("Elements du tableau:")
+    POUR i DE 0 A 4 FAIRE
+        ECRIRE("tab[", i, "] =", tab[i])
+    FIN_POUR
+FIN

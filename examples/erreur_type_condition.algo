@@ -1,0 +1,11 @@
+ALGORITHME ErreurTypeCondition
+// Test: Condition non booléenne
+VAR x : ENTIER
+
+DEBUT
+    x ← 10
+    // Erreur: la condition doit être BOOLEEN, pas ENTIER
+    SI x ALORS
+        ECRIRE("OK")
+    FIN_SI
+FIN

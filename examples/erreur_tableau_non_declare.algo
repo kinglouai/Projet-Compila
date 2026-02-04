@@ -1,0 +1,8 @@
+ALGORITHME ErreurTableauNonDeclare
+// Test: Utilisation d'un tableau non déclaré
+VAR x : ENTIER
+
+DEBUT
+    // Erreur: tab n'a pas été déclaré
+    tab[0] ← 10
+FIN

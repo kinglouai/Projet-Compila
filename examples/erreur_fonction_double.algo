@@ -1,0 +1,16 @@
+ALGORITHME ErreurFonctionDouble
+// Test: Double définition de fonction
+VAR x : ENTIER
+
+FONCTION carre(n : ENTIER) : ENTIER
+    RETOURNER n * n
+FIN_FONCTION
+
+// Erreur: carre est déjà définie
+FONCTION carre(a : ENTIER) : ENTIER
+    RETOURNER a * a
+FIN_FONCTION
+
+DEBUT
+    x ← carre(5)
+FIN

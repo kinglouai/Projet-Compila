@@ -1,0 +1,9 @@
+ALGORITHME ErreurNonDeclaree
+// Ce fichier contient une erreur sémantique (variable non déclarée)
+VAR x : ENTIER
+
+DEBUT
+    x ← 10
+    y ← 20
+    ECRIRE(x + y)
+FIN

@@ -1,0 +1,52 @@
+ALGORITHME TestFonction
+// Exemple d'utilisation des fonctions
+VAR x : ENTIER
+VAR y : ENTIER
+VAR resultat : ENTIER
+
+// Fonction qui calcule le carré d'un nombre
+FONCTION carre(n : ENTIER) : ENTIER
+    RETOURNER n * n
+FIN_FONCTION
+
+
+
+// Fonction qui calcule la somme de deux nombres
+FONCTION somme(a : ENTIER, b : ENTIER) : ENTIER
+VAR total : ENTIER
+    total ← a + b
+    RETOURNER total
+FIN_FONCTION
+
+// Fonction factorielle
+FONCTION factorielle(n : ENTIER) : ENTIER
+VAR i : ENTIER
+VAR result : ENTIER
+    result ← 1
+    POUR i DE 1 A n FAIRE
+        result ← result * i
+    FIN_POUR
+    RETOURNER result
+FIN_FONCTION
+
+DEBUT
+    x ← 5
+    y ← 3
+    
+    // Appel de la fonction carre
+    resultat ← carre(x)
+    ECRIRE("Le carre de", x, "est", resultat)
+    
+
+    // Appel de la fonction somme
+    resultat ← somme(x, y)
+    ECRIRE("La somme de", x, "et", y, "est", resultat)
+    
+    // Appel de la fonction factorielle
+    resultat ← factorielle(x)
+    ECRIRE("Factorielle de", x, "est", resultat)
+    
+    // Appel imbriqué
+    resultat ← carre(somme(2, 3))
+    ECRIRE("carre(somme(2, 3)) =", resultat)
+FIN

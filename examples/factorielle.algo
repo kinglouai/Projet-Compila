@@ -1,0 +1,16 @@
+ALGORITHME Factorielle
+// Calcule la factorielle d'un nombre
+VAR n : ENTIER
+VAR resultat : ENTIER
+VAR i : ENTIER
+
+DEBUT
+    n ← 5
+    resultat ← 1
+    
+    POUR i DE 1 A n FAIRE
+        resultat ← resultat * i
+    FIN_POUR
+    
+    ECRIRE("Factorielle de", n, "=", resultat)
+FIN

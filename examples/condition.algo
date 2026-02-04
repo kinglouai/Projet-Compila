@@ -1,0 +1,17 @@
+ALGORITHME Condition
+// Démontre l'utilisation des conditions SI/SINON
+VAR age : ENTIER
+
+DEBUT
+    age ← 18
+    
+    SI age >= 18 ALORS
+        ECRIRE("Vous etes majeur")
+    SINON
+        ECRIRE("Vous etes mineur")
+    FIN_SI
+    
+    SI age >= 21 ALORS
+        ECRIRE("Vous pouvez tout faire aux USA")
+    FIN_SI
+FIN

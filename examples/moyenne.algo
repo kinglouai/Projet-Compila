@@ -1,0 +1,22 @@
+ALGORITHME Moyenne
+// Calcule la moyenne de plusieurs nombres
+VAR somme : ENTIER
+VAR nombre1 : ENTIER
+VAR nombre2 : ENTIER
+VAR nombre3 : ENTIER
+VAR moyenne : REEL
+
+DEBUT
+    nombre1 ← 15
+    nombre2 ← 20
+    nombre3 ← 25
+    
+    somme ← nombre1 + nombre2 + nombre3
+    moyenne ← somme / 3
+    
+    ECRIRE("Nombre 1:", nombre1)
+    ECRIRE("Nombre 2:", nombre2)
+    ECRIRE("Nombre 3:", nombre3)
+    ECRIRE("Somme:", somme)
+    ECRIRE("Moyenne:", moyenne)
+FIN

@@ -1,0 +1,10 @@
+ALGORITHME ErreurTypeArithmetique
+// Test: Opération arithmétique sur non-numérique
+VAR x : ENTIER
+VAR msg : CHAINE
+
+DEBUT
+    msg ← "hello"
+    // Erreur: multiplication requiert types numériques
+    x ← msg * 2
+FIN

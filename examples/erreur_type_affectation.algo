@@ -1,0 +1,8 @@
+ALGORITHME ErreurTypeAffectation
+// Test: Affectation d'un type incompatible
+VAR x : ENTIER
+
+DEBUT
+    // Erreur: x est ENTIER mais reçoit CHAINE
+    x ← "texte"
+FIN

@@ -1,0 +1,13 @@
+ALGORITHME Exemple
+VAR x : ENTIER
+VAR y : ENTIER
+DEBUT
+    x ← 10
+    y ← 20
+    Si x < y ALORS
+        ECRIRE("x is less than y")
+    SINON
+        ECRIRE("x is not less than y")
+    FIN_SI
+    ECRIRE("Anas is ")
+FIN

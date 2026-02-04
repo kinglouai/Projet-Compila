@@ -1,0 +1,11 @@
+ALGORITHME TestSimple
+// Exemple simple de test
+VAR y : CHAINE
+VAR x : ENTIER
+
+DEBUT
+    x ← 10
+    y ← "test"
+    ECRIRE("x =", x)
+    ECRIRE("y =", y)
+FIN
